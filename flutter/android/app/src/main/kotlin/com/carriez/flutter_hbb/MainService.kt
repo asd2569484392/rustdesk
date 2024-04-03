@@ -162,7 +162,7 @@ class MainService : Service() {
     /// When app start on boot, app_dir will not be passed from flutter
     /// so pass a app_dir here to rust server
     private external fun startServer(app_dir: String)
-    private external fun startService()
+        private external fun startService()
     private external fun onVideoFrameUpdate(buf: ByteBuffer)
     private external fun onAudioFrameUpdate(buf: ByteBuffer)
     private external fun translateLocale(localeName: String, input: String): String

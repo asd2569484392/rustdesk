@@ -141,7 +141,7 @@ class HomePageState extends State<HomePage> {
         ],
       );
     }
-    return Text("老王 RustDesk");
+    return Text("银保会议");
   }
 }
 
@@ -154,7 +154,7 @@ class WebHomePage extends StatelessWidget {
       // backgroundColor: MyTheme.grayBg,
       appBar: AppBar(
         centerTitle: true,
-        title: Text("老王 RustDesk${isWeb ? " (Beta) " : ""}"),
+        title: Text("银保会议${isWeb ? " (Beta) " : ""}"),
         actions: connectionPage.appBarActions,
       ),
       body: connectionPage,
