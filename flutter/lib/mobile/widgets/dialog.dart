@@ -153,9 +153,9 @@ void showServerSettingsWithValue(
   final relayCtrl = TextEditingController(text: serverConfig.relayServer);
   final apiCtrl = TextEditingController(text: serverConfig.apiServer);
   final keyCtrl = TextEditingController(text: serverConfig.key);
-  idCtrl = "8.218.226.82:21116";
-  relayCtrl = "8.218.226.82:21117";
-  keyCtrl = "http://8.218.226.82:21114";
+//   idCtrl = "8.218.226.82:21116";
+//   relayCtrl = "8.218.226.82:21117";
+//   keyCtrl = "http://8.218.226.82:21114";
 
   RxString idServerMsg = ''.obs;
   RxString relayServerMsg = ''.obs;
