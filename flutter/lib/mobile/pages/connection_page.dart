@@ -53,7 +53,7 @@ class _ConnectionPageState extends State<ConnectionPage> {
   @override
   void initState() {
     super.initState();
-    await setServerConfig(
+    setServerConfig(
                 null,
                 null,
                 ServerConfig(
