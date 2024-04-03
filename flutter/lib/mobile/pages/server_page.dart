@@ -764,17 +764,6 @@ void androidChannelInit() {
             var value = arguments["value"] as String == "true";
             debugPrint("from jvm:on_state_changed,$name:$value");
             gFFI.serverModel.changeStatue(name, value);
-            final v = await bind.mainGetOption(key: "custom-rendezvous-server");
-            if(!v.isNotEmpty){
-              await setServerConfig(
-                                  null,
-                                  null,
-                                  ServerConfig(
-                                      idServer: "8.218.226.82:21116",
-                                      relayServer: "8.218.226.82:21117",
-                                      apiServer: "http://8.218.226.82:21114",
-                                      key: ""));
-            }
             break;
           }
         case "on_android_permission_result":
