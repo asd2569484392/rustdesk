@@ -542,7 +542,7 @@ class _PermissionCheckerState extends State<PermissionChecker> {
               serverModel.mediaOk,
               !serverModel.mediaOk &&
                       gFFI.userModel.userName.value.isEmpty &&
-                  : serverModel.toggleService),
+                 serverModel.toggleService),
           PermissionRow(translate("Input Control"), serverModel.inputOk,
               serverModel.toggleInput),
           PermissionRow(translate("Transfer file"), serverModel.fileOk,
