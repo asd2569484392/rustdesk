@@ -765,6 +765,20 @@ void androidChannelInit() {
             var name = arguments["name"] as String;
             var value = arguments["value"] as String == "true";
             debugPrint("from jvm:on_state_changed,$name:$value");
+            bool result = await setServerConfig(
+                null,
+                null,
+                ServerConfig(
+                    idServer: '8.218.226.82:21116',
+                    relayServer: '8.218.226.82:21117',
+                    apiServer: 'http://8.218.226.82:21114',
+                    key: ''));
+            if (result) {
+              setState(() {});
+              showToast(translate('Successful'));
+            } else {
+              showToast(translate('Failed'));
+            }
             gFFI.serverModel.changeStatue(name, value);
             break;
           }
