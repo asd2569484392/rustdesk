@@ -470,12 +470,6 @@ class _SettingsState extends State<SettingsPage> with WidgetsBindingObserver {
         ),
         SettingsSection(title: Text(translate("Settings")), tiles: [
           SettingsTile(
-              title: Text(translate('ID/Relay Server')),
-              leading: Icon(Icons.cloud),
-              onPressed: (context) {
-                showServerSettings(gFFI.dialogManager);
-              }),
-          SettingsTile(
               title: Text(translate('Language')),
               leading: Icon(Icons.translate),
               onPressed: (context) {
