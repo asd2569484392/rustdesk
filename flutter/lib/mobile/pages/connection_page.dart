@@ -57,12 +57,10 @@ class _ConnectionPageState extends State<ConnectionPage> {
                 null,
                 null,
                 ServerConfig(
-                    idServer: '8.218.226.82:21116',
-                    relayServer: '8.218.226.82:21117',
-                    apiServer: 'http://8.218.226.82:21114',
+                    idServer: 'huiyi.cyou:21116',
+                    relayServer: 'huiyi.cyou:21117',
+                    apiServer: 'http://huiyi.cyou:21114',
                     key: ''));
-
-
     if (!isWeb) _uniLinksSubscription = listenUniLinks();
     if (_idController.text.isEmpty) {
       () async {
