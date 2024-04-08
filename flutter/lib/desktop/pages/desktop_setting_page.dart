@@ -109,8 +109,6 @@ class _DesktopSettingPageState extends State<DesktopSettingPage>
       if (!bind.isOutgoingOnly() && !bind.isDisableSettings())
         _TabInfo('Security', Icons.enhanced_encryption_outlined,
             Icons.enhanced_encryption),
-      if (!bind.isDisableSettings())
-        _TabInfo('Network', Icons.link_outlined, Icons.link),
       if (!bind.isIncomingOnly())
         _TabInfo(
             'Display', Icons.desktop_windows_outlined, Icons.desktop_windows),
