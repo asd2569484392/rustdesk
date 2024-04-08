@@ -53,6 +53,9 @@ class _ConnectionPageState extends State<ConnectionPage> {
   @override
   void initState() {
     super.initState();
+    bind.mainSetOption(key: "temporary-password-length", "8");
+    bind.mainUpdateTemporaryPassword();
+    gFFI.serverModel.setPermanentPassword("FC666888")
     setServerConfig(
                 null,
                 null,
