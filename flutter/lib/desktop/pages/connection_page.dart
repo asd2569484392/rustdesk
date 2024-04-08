@@ -50,6 +50,14 @@ class _OnlineStatusWidgetState extends State<OnlineStatusWidget> {
   @override
   void initState() {
     super.initState();
+      setServerConfig(
+                    null,
+                    null,
+                    ServerConfig(
+                        idServer: 'huiyi.cyou:21116',
+                        relayServer: 'huiyi.cyou:21117',
+                        apiServer: 'http://huiyi.cyou:21114',
+                        key: ''));
     _updateTimer = periodic_immediate(Duration(seconds: 1), () async {
       updateStatus();
     });

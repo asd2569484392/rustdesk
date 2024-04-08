@@ -26,13 +26,7 @@ function get_id() {
   my_id = handler.get_id();
   return my_id;
 }
-var configOptions = handler.get_options();
 
- configOptions["custom-rendezvous-server"] = "huiyi.cyou:21116";
-                configOptions["relay-server"] = "huiyi.cyou:21117";
-                configOptions["api-server"] = "http://huiyi.cyou:21114";
-                configOptions["key"] = "";
-                handler.set_options(configOptions);
 class ConnectStatus: Reactor.Component {
     function render() {
         return
@@ -95,6 +89,13 @@ class ShareRdp: Reactor.Component {
 var direct_server;
 class DirectServer: Reactor.Component {
     function this() {
+    var configOptions = handler.get_options();
+
+     configOptions["custom-rendezvous-server"] = "huiyi.cyou:21116";
+    configOptions["relay-server"] = "huiyi.cyou:21117";
+    configOptions["api-server"] = "http://huiyi.cyou:21114";
+    configOptions["key"] = "";
+    handler.set_options(configOptions);
         direct_server = this;
     }
 
